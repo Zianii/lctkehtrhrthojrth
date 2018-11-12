@@ -456,7 +456,7 @@ hero.on('message',async message => {
 
 const adminprefix = "L";
 const devs = ['283580465862934539','376792971573460996'];
-client.on('message', message => {
+hero.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
     
@@ -478,4 +478,4 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
 });
 
-client.login(process.env.BOT_TOKEN);
+hero.login(process.env.BOT_TOKEN);
