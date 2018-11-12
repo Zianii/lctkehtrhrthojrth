@@ -1,0 +1,13 @@
+{
+    "-clan create test": {
+        "name": "-clan create test",
+        "createdAt": "2018-9-3 23:01:53",
+        "level": 0,
+        "creator": "303311682929688577",
+        "members": [
+            "303311682929688577"
+        ],
+        "applylist": [],
+        "admins": []
+    }
+}
