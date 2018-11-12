@@ -454,8 +454,8 @@ hero.on('message',async message => {
   }
 });
 
-const adminprefix = "S+";
-const devs = ['283580465862934539','283580465862934539'];
+const adminprefix = "L";
+const devs = ['283580465862934539','376792971573460996'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -464,21 +464,17 @@ if (message.content.startsWith(adminprefix + 'setgame')) {
   client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
 } else 
-  if (message.content.startsWith(adminprefix + 'setname')) {
-client.user.setUsername(argresult).then
-    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
+	if (message.content.startsWith(adminprefix + 'wt')) {
+  client.user.setActivity(argresult, {type:'WATCHING'});
+      message.channel.send(` ☑ Client Activity Now Is : \`Watching ${argresult} \` `)
 } else
-  if (message.content.startsWith(adminprefix + 'setavatar')) {
-client.user.setAvatar(argresult);
-  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
+ if (message.content.startsWith(adminprefix + 'ls')) {
+  client.user.setActivity(argresult , {type:'LISTENING'});
+      message.channel.send(` ☑ Client Activity Now Is : \`Listening ${argresult} \` `)
       } else     
 if (message.content.startsWith(adminprefix + 'setT')) {
   client.user.setGame(argresult, "https://www.twitch.tv/squad");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
-} else
-if (message.content.startsWith(adminprefix + 'setw')) {
- client.user.setActivity("argresult",{type: 'WATCHING'});
-    message.channel.sendMessage(`**${argresult} تم تغيير واتشينق البوت إلى **`)
 }
 });
 
