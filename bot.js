@@ -57,27 +57,6 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
 });
 
-client.on('message', message => {
-    if(message.content.startsWith(prefix+'help')) {
-   const embed = new Discord.RichEmbed()
-.setColor('RANDOM')
-        .setDescription(`**
-General's Commands. 
-${prefix}giveaway - لانشاء قيف اواي :scroll:
-${prefix}server - معلومات عن السيرفر :smile:
-${prefix}clear - يمسح الشات بس حط عدد  :eyeglasses: 
-${prefix}id - معلومات عنك  :scroll:
-${prefix}ban - يعطى بان بس حط سبب :flashlight:
-${prefix}kick - يعطى كيك مع السبب :frame_photo:
-${prefix}bc - ارسال رساله جماعيه لكل الى فسيرفر بالخاص:microphone:
-${prefix}hc - يخفي الشات :nut_and_bolt:
-${prefix}unhc - يظهر الشات :nut_and_bolt:
-
-            bot help       
-
-    message.author.send(embed)
-}
-});
 
 
 client.on('message',async message => {
