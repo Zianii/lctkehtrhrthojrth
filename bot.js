@@ -1659,7 +1659,7 @@ client.on('message', function(message) {
 
 
 client.on('message', message => {
-    if (message.content.startsWith("ءavatar")) {
+    if (message.content.startsWith("xavatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
